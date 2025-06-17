@@ -1,0 +1,102 @@
+.pokeapi-container {
+    background: #f7faff;
+    border-radius: 18px;
+    box-shadow: 0 2px 14px #0b6efd18;
+    padding: 32px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .pokeapi-container h2 {
+    color: #dc143c;
+    text-align: center;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+  }
+  
+  .pokeapi-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+    gap: 8px;
+  }
+  
+  .pokeapi-form input[type="text"],
+  .pokeapi-form input[name="pokemon"] {
+    padding: 9px 12px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    font-size: 1em;
+    width: 160px;
+  }
+  
+  .pokeapi-form button {
+    background: #dc143c;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 9px 18px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 6px #dc143c33;
+  }
+  .pokeapi-form button:hover {
+    background: #a2102b;
+  }
+  
+  .pokeapi-loading,
+  .pokeapi-error {
+    text-align: center;
+    margin: 18px 0;
+    font-size: 1.1em;
+  }
+  
+  .pokeapi-error {
+    color: #c00;
+    background: #ffeded;
+    border: 1px solid #fbb;
+    border-radius: 6px;
+    padding: 7px 10px;
+  }
+  
+  .pokeapi-profile {
+    text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 10px;
+    margin-top: 10px;
+    box-shadow: 0 1px 6px #0b6efd0b;
+  }
+  
+  .pokeapi-profile h3 {
+    color: #1863c2;
+    margin-top: 0;
+    letter-spacing: 2px;
+  }
+  
+  .pokeapi-profile img {
+    margin: 0 auto 10px auto;
+    display: block;
+    background: #f7f7f7;
+    border-radius: 50%;
+    border: 2px solid #dde8f9;
+  }
+  
+  .pokeapi-profile p {
+    margin: 9px 0;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  @media (max-width: 500px) {
+    .pokeapi-container {
+      max-width: 98vw;
+      padding: 7vw 2vw;
+    }
+    .pokeapi-form {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  }
