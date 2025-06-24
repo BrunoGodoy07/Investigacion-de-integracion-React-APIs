@@ -12,7 +12,7 @@ export default function BoredAPI() {
     setLoading(true);
     setError(false);
     axios
-      .get("https://www.boredapi.com/api/activity")
+      .get("https://bored-api.appbrewery.com/random")
       .then((res) => {
         if (res.data && res.data.activity) {
           setActividad(res.data.activity);
